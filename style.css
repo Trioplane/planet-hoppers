@@ -148,3 +148,7 @@ body {
   display: flex;
   position: relative;
 }
+
+* {
+  outline: rgba(255, 99, 71, 0.473) solid 2px;
+}
