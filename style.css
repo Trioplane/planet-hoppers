@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-size-large: 1.625em;
+  --font-weight-bold: 700;
+  --font-color-white: white;
+  --font-size-small: 1em;
+  --font-weight-small: 400;
+  --font-color-black: 202020;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url("https://stsci-opo.org/STScI-01F3N9J43BBH84ZYK0MKPQKDS1.png");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.head::after {
+  content: "IMAGE: NASA, ESA, STScI";
+  position: absolute;
+  top: 95%;
+  right: 85%;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1em;
+  max-width: 100vw;
+}
+
+.headImage {
+  width: 50%;
+  height: auto;
+  display: inline-flex;
+}
+
+.button {
+  display: flex;
+  background: #95e8ff;
+  border-bottom: 5px solid #339cd7;
+  padding-block: 1em;
+  padding-inline: 2em;
+  text-decoration: none;
+  color: #344257;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #95e8ff;
+  border-bottom: 5px solid #339cd7;
+  left: 100%;
+  top: 20%;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  background: #95e8ff;
+  border-bottom: 5px solid #339cd7;
+  right: 100%;
+  top: 20%;
+}
+
+.button:hover,
+.button:hover::after,
+.button:hover::before {
+  background: linear-gradient(to top, #8d8e92, #e6e9ee);
+  border-bottom: 5px solid #aba09c;
+}
+
+.large-text {
+  font-family: "Noto Sans";
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.small-text {
+  font-family: "Arial";
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-small);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.white {
+  color: var(--font-color-white);
+}
+
+.black {
+  color: var(--font-color-black);
+}
+
+.text-wrapper {
+  margin: 3em;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-wrapper-not-centered {
+  margin: 3em;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshots {
+  background-color: #4ad5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.margin {
+  margin: 3em;
+}
+
+.footer {
+  background-color: #202020;
+  display: flex;
+  position: relative;
+}
