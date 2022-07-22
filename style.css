@@ -17,6 +17,48 @@ body {
   padding: 0;
 }
 
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #202020;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-inline: 1rem;
+  align-items: center;
+}
+
+.nav-items {
+  font-weight: 700;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--font-color-white);
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.9rem;
+}
+
+.right {
+  position: absolute;
+  right: 1%;
+}
+
+.nav-items[download] {
+  color: var(--font-color-black);
+  background-color: #ffb054;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-top: 3px #fce07e solid;
+  border-bottom: 3px #df8318 solid;
+}
+
 .head {
   background-color: #000;
   display: flex;
@@ -32,8 +74,8 @@ body {
 .head::after {
   content: "IMAGE: NASA, ESA, STScI";
   position: absolute;
-  top: 95%;
-  right: 85%;
+  bottom: 0;
+  left: 0;
   color: rgba(255, 255, 255, 0.3);
   font-size: 1em;
   max-width: 100vw;
@@ -149,6 +191,6 @@ body {
   position: relative;
 }
 
-* {
+/* * {
   outline: rgba(255, 99, 71, 0.473) solid 2px;
-}
+} */
